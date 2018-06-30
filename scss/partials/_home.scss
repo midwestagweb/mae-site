@@ -42,9 +42,19 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  position: relative;
   img {
     border-radius: 15px;
+    box-shadow: 2px 3px 0 $lightgreen;
     height: 75px;
     margin: 2rem .75rem .75rem .75rem;
   }
 }
+
+// .product-logos:before {
+//   border-top: 2px solid #efefef;
+//   content: "";
+//   left: 0;
+//   position: absolute;
+//   width: 25%;
+// }

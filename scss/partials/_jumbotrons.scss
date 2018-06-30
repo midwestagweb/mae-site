@@ -30,7 +30,7 @@
   text-shadow: 1px 1px 1px #000;
   @include respond-at(768px) {
     background-image: url("/images/mae-home-hero-lg.jpg");
-    background-position: 0 -75px;
+    background-position: 0 0;
   }
   @include respond-at(1200px) {
     background-position: 0 -205px;
@@ -89,9 +89,13 @@
 }
 
 .jumbotron-about-hero {
-  background: url("/images/about-hero.jpg") no-repeat;
+  background-image: url("/images/mae-about-hero-sm.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
+  @include respond-at(768px){
+    background-image: url("/images/mae-about-hero-lg.jpg");
+  }
 }

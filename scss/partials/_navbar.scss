@@ -58,7 +58,13 @@
   color: #fff;
   font-weight: bold;
   transition: all .3s;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  @include respond-at(768px){
+    font-size: 1.35rem;
+  }
+  @include respond-at(992px){
+    font-size: 2rem;
+  }
 }
 
 .navbar-default .navbar-nav > li > a:hover {

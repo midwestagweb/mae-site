@@ -9,5 +9,5 @@ $(document).ready(function(){
   
   TweenMax.from('.jumbotron', 1, {opacity:0});
 	TweenMax.from('.navbar-brand', .5, {top: -50, opacity: 0, ease:Power0.easeOut}); 
-	TweenMax.from('.jumbotron img', 1, {bottom: 0, opacity: 0, ease:Power0.easeOut})
+	// TweenMax.from('.jumbotron img', 1, {bottom: 0, opacity: 0, ease:Power0.easeOut})
 });
