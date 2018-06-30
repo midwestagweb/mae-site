@@ -11,7 +11,7 @@
 }
 
 .jumbotron-home-hero {
-  background: url("../../images/home-hero-cows.jpg") no-repeat;
+  background: url("/images/home-hero-cows.jpg") no-repeat;
   background-size: cover;
   background-position: top;
   color: #fff;
@@ -29,23 +29,8 @@
   }
 }
 
-.jumbotron-anion-hero {
-  background: url("../images/anion-glucose-hero.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  min-height: 350px;
-  text-shadow: 1px 1px 1px #000;
-}
-
-.jumbotron-anion-hero img {
-  bottom: 30px;
-  position: absolute;
-  right: 90px;
-}
-
 .jumbotron-glucose-hero {
-  background: url("../images/anion-glucose-hero.jpg") no-repeat;
+  background: url("/images/anion-glucose-hero.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -73,7 +58,7 @@
 }
 
 .jumbotron-contact-hero {
-  background: url("../images/contact-hero.jpg") no-repeat;
+  background: url("/images/contact-hero.jpg") no-repeat;
   background-size: cover;
   background-position: bottom;
   color: #fff;
@@ -82,7 +67,7 @@
 }
 
 .jumbotron-about-hero {
-  background: url("../images/about-hero.jpg") no-repeat;
+  background: url("/images/about-hero.jpg") no-repeat;
   background-size: cover;
   background-position: bottom;
   color: #fff;

@@ -12,7 +12,7 @@ gulp.task('default', function(){
         }
       }))
       .pipe(gulp.dest('./'));
-  gulp.src('./njk/glucose-booster.html')
+  gulp.src('./njk/oat-groats.html')
       .pipe(nunjucks.compile({
         page_title: "Glucose Booster - Stuhr Enterprises",
         meta: {
@@ -20,16 +20,8 @@ gulp.task('default', function(){
           image: "https://www.stuhrenterprises.com/images/anion-glucose-hero.jpg"
         }
       }))
-      .pipe(gulp.dest('./'));
-  gulp.src('./njk/anion-booster.html')
-      .pipe(nunjucks.compile({
-        page_title: "Anion Booster - Stuhr Enterprises",
-        meta: {
-          description: "A solution to help controll Hypocalcemia (Milk Fever) by utilizing anions derived from natural sources that are palatable which helps increase DMI during this critical time of Transition. It also regulates the metabolic pH of the cow's blood and urine to increase the absorption of calcium.",
-          image: "https://www.stuhrenterprises.com/images/anion-glucose-hero.jpg"
-        }
-      }))
-      .pipe(gulp.dest('./'));
+      .pipe(rename('index.html'))
+      .pipe(gulp.dest('./products/oat-groats/'));
   gulp.src('./njk/about.html')
       .pipe(nunjucks.compile({
         page_title: "About - Stuhr Enterprises",
@@ -38,7 +30,8 @@ gulp.task('default', function(){
           image: "https://www.stuhrenterprises.com/images/about-hero.jpg"
         }
       }))
-      .pipe(gulp.dest('./'));
+      .pipe(rename('index.html'))
+      .pipe(gulp.dest('./about/'));
   gulp.src('./njk/contact.html')
       .pipe(nunjucks.compile({
         page_title: "Contact Us - Stuhr Enterprises",
