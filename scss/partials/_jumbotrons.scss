@@ -1,0 +1,91 @@
+.no-jumbo {
+  margin-top: 75px;
+}
+
+.jumbotron {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.jumbotron-home-hero {
+  background: url("../../images/home-hero-cows.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  li {
+    font-size: 2.5rem;
+    line-height: 2;
+    list-style: none;
+    i {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.jumbotron-anion-hero {
+  background: url("../images/anion-glucose-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 350px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.jumbotron-anion-hero img {
+  bottom: 30px;
+  position: absolute;
+  right: 90px;
+}
+
+.jumbotron-glucose-hero {
+  background: url("../images/anion-glucose-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 350px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.jumbotron-glucose-hero img {
+  bottom: 30px;
+  position: absolute;
+  right: 90px;
+}
+
+.jumbotron-anion-hero img, .jumbotron-glucose-hero img {
+  @include respond-up-to(767px) {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.jumbotron-anion-hero h1, .jumbotron-glucose-hero h1 {
+  @include respond-up-to(767px) {
+    padding: 30px 0;
+  }
+}
+
+.jumbotron-contact-hero {
+  background: url("../images/contact-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  min-height: 250px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.jumbotron-about-hero {
+  background: url("../images/about-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  min-height: 250px;
+  text-shadow: 1px 1px 1px #000;
+}

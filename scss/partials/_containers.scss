@@ -1,0 +1,5 @@
+.container {
+  @include respond-at(1200px){
+    width: 1070px;
+  }
+}

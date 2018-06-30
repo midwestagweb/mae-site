@@ -1,0 +1,35 @@
+
+.nav-tabs a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: black;
+}
+
+.nav-tabs .open>a, .nav-tabs .open>a:focus, .nav-tabs .open>a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+  background: #158cba;
+  color: white;
+  padding-bottom: 10px;
+  margin-top: 6px;
+}
+
+.tab-content {
+  min-height: 240px;
+  @include respond-at(768px){
+    min-height: 340px;
+  }
+}
+
+.tab-pane address {
+  padding: 2rem;
+}
+
+.form-control {
+  color: black;
+}
+
+.form-control::placeholder{
+  color: #333;
+  opacity: 1;
+}
+
+address{
+  margin-bottom: 0;
+}

@@ -1,0 +1,109 @@
+.navbar.navbar-mae {
+  // background-color: #000;
+  background: linear-gradient(to right, $lightgreen, $darkgreen);
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid $lightgreen;
+  margin-bottom: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar-brand {
+  float: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  padding-left: 15px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: $mainRed;
+}
+
+.navbar-collapse {
+  border-top: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-nav {
+  @include respond-up-to(767px) {
+    margin-top: 75px;
+  }
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:link,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:visited {
+  color: #fff;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: $mainRed;
+  color: #000;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:link,
+.navbar-default .navbar-nav > .active > a:active,
+.navbar-default .navbar-nav > .active > a:visited {
+  background-color: $mainRed;
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: $mainRed;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu {
+  background: transparent;
+  border: none;
+  li > a {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    &:focus {
+      color: $darkgreen;
+    }
+    &:hover {
+      color: $darkgreen;
+    }
+  }
+  @include respond-at(768px){
+    background: $lightgreen;
+  }
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background: $lightgreen;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background: $lightgreen;
+  color: white;
+}
