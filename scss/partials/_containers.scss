@@ -2,4 +2,7 @@
   @include respond-at(1200px){
     width: 1070px;
   }
+  h2:first-child{
+    margin-top: 0;
+  }
 }

@@ -10,8 +10,8 @@
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 2px 2px 0 #999999;
-  margin-bottom: 2rem;
-  margin-top: 1.2rem;
+  margin-bottom: 4rem;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -35,5 +35,16 @@
 .products {
   @include respond-at(768px){
     padding: 0 4rem;
+  }
+}
+
+.product-logos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  img {
+    border-radius: 15px;
+    height: 75px;
+    margin: 2rem .75rem .75rem .75rem;
   }
 }

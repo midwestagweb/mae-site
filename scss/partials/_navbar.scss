@@ -58,11 +58,12 @@
   color: #fff;
   font-weight: bold;
   transition: all .3s;
+  font-size: 1.75rem;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
   background-color: $mainRed;
-  color: #000;
+  color: white;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -80,7 +81,6 @@
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu {
-  background: transparent;
   border: none;
   li > a {
     color: white;
@@ -88,10 +88,12 @@
     font-weight: bold;
     letter-spacing: .05rem;
     &:focus {
-      color: $darkgreen;
+      background-color: $darkgreen;
+      color: white;
     }
     &:hover {
-      color: $darkgreen;
+      background-color: $darkgreen;
+      color: white;
     }
   }
   @include respond-at(768px){

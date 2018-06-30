@@ -3,28 +3,52 @@
 }
 
 .jumbotron {
+  background-color: transparent;
   border: none;
   box-shadow: none;
-  -webkit-box-shadow: none;
+  height: 100%;
+  margin-bottom: 3rem;
+  min-height: 350px;
   overflow: hidden;
   position: relative;
+  -webkit-box-shadow: none;
+  h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-size: 5rem;
+    margin: 4rem 0 2rem 0;
+    padding: 1.25rem 1.75rem;
+  }
 }
 
 .jumbotron-home-hero {
-  background: url("/images/home-hero-cows.jpg") no-repeat;
+  background-image: url("/images/mae-home-hero-sm.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
-  h1 {
-    margin-bottom: 2rem;
+  @include respond-at(768px) {
+    background-image: url("/images/mae-home-hero-lg.jpg");
+    background-position: 0 -75px;
+  }
+  @include respond-at(1200px) {
+    background-position: 0 -205px;
+  }
+  ul {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 1rem;
   }
   li {
     font-size: 2.5rem;
     line-height: 2;
     list-style: none;
+    padding-left: 1rem;
+    position: relative;
     i {
-      padding-right: 1rem;
+      left: -2.5rem;
+      position: absolute;
+      top: 1.2rem;
     }
   }
 }
@@ -34,7 +58,6 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  min-height: 350px;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -62,7 +85,6 @@
   background-size: cover;
   background-position: bottom;
   color: #fff;
-  min-height: 250px;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -71,6 +93,5 @@
   background-size: cover;
   background-position: bottom;
   color: #fff;
-  min-height: 250px;
   text-shadow: 1px 1px 1px #000;
 }
