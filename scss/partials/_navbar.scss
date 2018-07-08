@@ -18,7 +18,7 @@
 }
 
 .navbar-brand img {
-  padding-left: 15px;
+  // padding-left: 15px;
 }
 
 .navbar-default .navbar-toggle {
@@ -36,7 +36,6 @@
 
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: $mainRed;
 }
 
 .navbar-collapse {
@@ -68,7 +67,6 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: $mainRed;
   color: white;
 }
 
@@ -76,13 +74,11 @@
 .navbar-default .navbar-nav > .active > a:link,
 .navbar-default .navbar-nav > .active > a:active,
 .navbar-default .navbar-nav > .active > a:visited {
-  background-color: $mainRed;
   color: #000;
   font-weight: bold;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-  background-color: $mainRed;
   color: #fff;
 }
 
@@ -94,12 +90,12 @@
     font-weight: bold;
     letter-spacing: .05rem;
     &:focus {
-      background-color: $darkgreen;
-      color: white;
+      background-color: $lightyellow;
+      color: $darkgreen
     }
     &:hover {
-      background-color: $darkgreen;
-      color: white;
+      background-color: $lightyellow;
+      color: $darkgreen;
     }
   }
   @include respond-at(768px){

@@ -81,11 +81,15 @@
 }
 
 .jumbotron-contact-hero {
-  background: url("/images/contact-hero.jpg") no-repeat;
+  background-image: url("/images/mae-contact-hero-sm.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
+  @include respond-at(768px) {
+    background-image: url("/images/mae-contact-hero-lg.jpg");
+  }
 }
 
 .jumbotron-about-hero {

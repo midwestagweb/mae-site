@@ -1,0 +1,22 @@
+.checklist {
+  ul {
+    background-color: $lightyellow;
+    border-radius: $br-value;
+    margin: 2rem 0;
+    padding: 1rem 1rem 1rem 5rem;
+  }
+  li {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 2;
+    list-style: none;
+    padding-left: 1rem;
+    position: relative;
+    i {
+      color: $lightgreen;
+      left: -2.5rem;
+      position: absolute;
+      top: 1.2rem;
+    }
+  }
+}
