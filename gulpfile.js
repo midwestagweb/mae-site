@@ -12,7 +12,7 @@ gulp.task('default', function(){
         }
       }))
       .pipe(gulp.dest('./'));
-  gulp.src('./njk/oat-groats.html')
+  gulp.src('./njk/prod-oat-groats.html')
       .pipe(nunjucks.compile({
         page_title: "Glucose Booster - Stuhr Enterprises",
         meta: {
@@ -32,6 +32,16 @@ gulp.task('default', function(){
       }))
       .pipe(rename('index.html'))
       .pipe(gulp.dest('./about/'));
+  gulp.src('./njk/transloading.html')
+      .pipe(nunjucks.compile({
+        page_title: "Transloading - Stuhr Enterprises",
+        meta: {
+          description: "Find information on national and international contacts as well as request research.",
+          image: "https://www.stuhrenterprises.com/images/contact-hero.jpg"
+        }
+      }))
+      .pipe(rename('index.html'))
+      .pipe(gulp.dest('./transloading/'));
   gulp.src('./njk/contact.html')
       .pipe(nunjucks.compile({
         page_title: "Contact Us - Stuhr Enterprises",
