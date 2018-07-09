@@ -40,6 +40,10 @@ h2 sup {
   font-size: 1.6rem;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 a {
   color: $lightgreen;
   overflow-wrap: break-word;
@@ -52,6 +56,12 @@ a[href^="tel"]{
   text-decoration:none;
 }
 
+figcaption {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: .75rem;
+}
+
 .standout {
   background: #efefef;
   border-bottom: 2px solid #999;
@@ -60,4 +70,11 @@ a[href^="tel"]{
   margin-bottom: 2rem;
   padding: 1.2rem;
   text-align: center;
+}
+
+.img-by-text {
+  margin-bottom: 1rem;
+  @include respond-at(768px) {
+    margin-bottom: 0;
+  }
 }

@@ -27,6 +27,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  margin-bottom: 0; 
   text-shadow: 1px 1px 1px #000;
   @include respond-at(768px) {
     background-image: url("/images/mae-home-hero-lg.jpg");
