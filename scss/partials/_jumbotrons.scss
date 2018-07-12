@@ -81,6 +81,18 @@
   }
 }
 
+.jumbotron-products-hero {
+  background-image: url("/images/mae-products-hero-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  @include respond-at(768px) {
+    background-image: url("/images/mae-products-hero-lg.jpg");
+  }
+}
+
 .jumbotron-transloading-hero {
   background-image: url("/images/mae-transloading-hero-sm.jpg");
   background-repeat: no-repeat;
@@ -97,7 +109,7 @@
   background-image: url("/images/mae-contact-hero-sm.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   @include respond-at(768px) {
