@@ -12,12 +12,24 @@
   overflow: hidden;
   position: relative;
   -webkit-box-shadow: none;
+  .container {
+    position: relative;
+  }
   h1 {
     background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     font-size: 5rem;
     margin: 4rem 0 2rem 0;
     padding: 1.25rem 1.75rem;
+  }
+  .j-logo {
+    border-radius: 15px;
+    bottom: -85px;
+    box-shadow: 2px 3px 0 $lightgreen;
+    height: 75px;
+    margin: 2rem .75rem .75rem .75rem;
+    position: absolute;
+    left: 2rem;
   }
 }
 
